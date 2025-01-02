@@ -1,0 +1,21 @@
+--학생 테이블 만드는 SQL 
+CREATE TABLE student(
+ num number(4),
+ name varchar2(255)
+);
+
+ALTER TABLE student ADD CONSTRAINT student_pk PRIMARY KEY (num);
+
+
+
+-- 성적 테이블 만드는 SQL
+CREATE TABLE score (
+  student_num number(4),
+  grade varchar2(255) -- A,B,C
+);
+
+ALTER TABLE score ADD CONSTRAINT score_student_fk FOREIGN KEY(student_num) references student;
+
+
+-- 학생 pk 시퀀스 생성 SQL
+CREATE SEQUENCE student_seq START WITH 1 INCREMENT BY 1 MAXVALUE 1000 CYCLE NOCACHE;

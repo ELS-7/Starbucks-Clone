@@ -1,0 +1,33 @@
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+/*input[type="radio"] {height:22px; width:22px; margin-right:4px}*/
+input[type="checkbox"] {height:12px; width:12px;}
+.ez-hide { opacity: 0; filter:alpha(opacity=0); }
+.ez-checkbox {
+	background: transparent url('//image.istarbucks.co.kr/common/img/util/ck_icon.jpg') 0 0 no-repeat;
+	display:inline-block;
+}
+.ez-checked { 
+	background: transparent url('//image.istarbucks.co.kr/common/img/util/ck_icon_on.jpg') 0 0 no-repeat;
+	display:inline-block; 
+}
+/*
+.ez-radio {
+	background: transparent url('radio_off.png') 0 1px no-repeat;
+	display:inline-block;
+}
+.ez-selected {
+	background: transparent url('radio_on.png') 0 1px no-repeat;
+	display:inline-block;
+}
+*/
+
+.ez-checkbox-green {
+	background: transparent url('../images/checkbox-green.png') 0 1px no-repeat;
+	display:inline-block;
+	*display: inline;
+}
+.ez-checked-green { background-position: 0 -18px; }
+.ez-checkbox, .ez-radio { zoom: 1; *display:inline; _height:30px; }
